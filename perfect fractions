@@ -1,0 +1,27 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	float value =0.98989898989898989898989898989899, result = 0;
+	float numerator = 1, denominator = 1;
+	
+	result = numerator/denominator ;
+	
+	while(value!=result){
+		if(result<value){
+			numerator++;
+		}else{
+			denominator++;
+		}
+		result = (float)(numerator/denominator);
+	}
+	
+	
+	
+	cout<<"Final answer is (numerator/denominator) :\t("<<numerator<<"/"<<denominator<<")\n";
+	
+	
+	return 0;
+}
